@@ -3,7 +3,7 @@
                 section     .text
 
 _start:
-                ; Print "Fibonachi Sequence:"
+                ; Print "Fibonacci Sequence:"
                 mov         rax, syscWrite
                 mov         rsi, header
                 mov         rdi, stdout
@@ -50,7 +50,7 @@ powerLoop:      jz          powerDone
                 dec         rcx
                 jmp         powerLoop
 
-                ; Devide the fibonachi number by the power
+                ; Divide the Fibonacci number by the power
 powerDone:
                 mov         rcx, rax
                 mov         rax, [rel remainder]
@@ -97,7 +97,7 @@ syscWrite       equ         0x02000004              ; The syscall to write
 syscExit        equ         0x02000001              ; The syscall to exit
 stdout          equ         1
 exitSuccess     equ         0
-header          db          "Fibonachi Sequence:", newline
+header          db          "Fibonacci Sequence:", newline
 headerLength    equ         $ - header
 leftToPrint     dq          48
 thisNumber      dq          1

@@ -7,4 +7,4 @@ set(CMAKE_ASM_NASM_OBJECT_FORMAT macho64)
 
 link_libraries(libSystem.dylib)
 
-add_executable(fibonachi fibonachi.asm)
+add_executable(fibonacci fibonacci.asm)
