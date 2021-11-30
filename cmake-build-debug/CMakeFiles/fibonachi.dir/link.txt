@@ -1,1 +1,0 @@
-ld -e _start   CMakeFiles/fibonachi.dir/fibonachi.asm.o  -o fibonachi  -lSystem 
